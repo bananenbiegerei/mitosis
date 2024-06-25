@@ -8,9 +8,9 @@ The first thing to do after cloning the repo is to install node modules for the 
 
 ### ACF Blocks Submodule
 
-Our ACF blocks are now have their own repository: [wmde-blocks](https://bitbucket.org/bbteam2016/wmde-blocks/). They can be added to any theme as a submodule.
+Our ACF blocks are now have their own repository: `https://github.com/bananenbiegerei/bb-blocks`. They can be added to any theme as a submodule.
 
-The `wmde-blocks` submodule is installed by running `git submodule update --init` from the project directory.
+The `bb-blocks` submodule is installed by running `git submodule update --init` from the project directory.
 
 ### BrowserSync
 
@@ -32,45 +32,9 @@ The Prettier config is defined in `package.json` under the `prettier` key and sh
 
 ## ACF Blocks
 
-### Managing Changes
-
-The `blocks` directory contains the ACF blocks from the `wmde-blocks` submodule. It behaves as its own git project.
-
-If you make changes to blocks you can sync them to the repo:
-
-```
-cd blocks
-git commit -a -m 'Your commit message'
-git push
-```
-
-To update the submodule from the repo to the latest remote version, run the following:
-
-```
-cd blocks
-git pull
-```
-
 ### ACF-JSON
 
-The ACF-JSON files for the blocks are _not located_ in the `acf-json` directory. They are loaded from the corresponding directories in `blocks`. This means the fields cannot directly be imported and edited in the backend.
-
-If you wish to do that use symlinks. For example for the Card block you would do this (from the project top directory):
-
-```
-ln -s blocks/card/group_63da65f585957.json acf-json/
-
-```
-
-This will create a symbolic link and make the fields importable in the backend. All changes to the symlink will be mirrored to `blocks/card/group_63da65f585957.json`.
-
-Once you're done with the changes, delete the group in the backend. It will be removed from the DB, the symlink will be deleted. The file `blocks/card/group_63da65f585957.json` will still be there and the block will remain active.
-
-NOTE: _Make sure to NOT commit the symlinks to the repo!_
-
-Adding new Blocks:
-@EL ?
-@EL, do I have to edit init.json if I add new blocks?
+@Ingo noch mal schreiben
 
 ## String Translations
 
@@ -144,11 +108,11 @@ Go to wordpress instance -> themes. Mark the theme and check for updates. Then u
 
 _Do not manually upload files to the live server. Install the theme in the backend with the zipfile (unless it's for an emergency fix)._
 
-## Fork for WMDE projects
+## Fork for BB Starter Theme projects
 
-To recycle the wmde theme for different projects you can for the wmde theme.
+To recycle the bb theme for different projects you can for the bb theme.
 
-1. Fork the main repo: got to bitbucket and fork there
+1. Fork the main repo: got to github and fork there
 2. Clone the forked repo
 3. Install blocks submodule: ``` git submodule update --init --recursive ```
 4. Cleanup unecessary file
