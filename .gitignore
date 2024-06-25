@@ -1,0 +1,9 @@
+/node_modules/
+/dist/
+/.nova/
+/.env
+/js/
+/css/
+.DS_Store
+page-scrollanimation.php
+page-scrollmagic.php
