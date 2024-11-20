@@ -14,7 +14,7 @@ require_once get_template_directory() . '/functions/features.php';
 // Gutenberg page templates
 require_once get_template_directory() . '/functions/gutenberg-templates.php';
 
-require_once get_template_directory() . '/functions/gutenberg-blocks.php';
+//require_once get_template_directory() . '/functions/gutenberg-blocks.php';
 
 // Load styles & scripts
 require_once get_template_directory() . '/functions/enqueue-scripts.php';
