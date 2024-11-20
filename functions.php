@@ -11,11 +11,8 @@ require_once get_template_directory() . '/functions/localization.php';
 // Special features of theme
 require_once get_template_directory() . '/functions/features.php';
 
-// Load ACF blocks
-//require_once get_template_directory() . '/functions/acf-blocks.php';
-
-// Wrap blocks with containers for page layout
-require_once get_template_directory() . '/functions/containers.php';
+// Gutenberg page templates
+require_once get_template_directory() . '/functions/gutenberg-templates.php';
 
 // Load styles & scripts
 require_once get_template_directory() . '/functions/enqueue-scripts.php';
@@ -27,23 +24,11 @@ require_once get_template_directory() . '/functions/menu.php';
 require_once get_template_directory() . '/functions/icons.php';
 
 // Custom posts and taxonomies
-require_once get_template_directory() . '/functions/custom-posts.php';
-require_once get_template_directory() . '/functions/custom-taxonomies.php';
+//require_once get_template_directory() . '/functions/custom-posts.php';
+//require_once get_template_directory() . '/functions/custom-taxonomies.php';
 
 // Excerpts
 require_once get_template_directory() . '/functions/excerpts.php';
 
-// Block converter and unsupported blocks
-//require_once get_template_directory() . '/functions/block-converter.php';
-
 // Search
 // require_once get_template_directory() . '/functions/search.php';
-
-// Fixes
-//require_once get_template_directory() . '/functions/fixes.php';
-
-// Blog related
-//require_once get_template_directory() . '/functions/comments-functions.php';
-
-// Events related
-//require_once get_template_directory() . '/functions/events-calendar.php';

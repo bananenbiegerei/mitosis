@@ -15,11 +15,6 @@ add_filter(
 	3,
 );
 
-// Enable ACF options page
-if (function_exists('acf_add_options_page')) {
-	acf_add_options_page();
-}
-
 // Disable admin bar in site view
 show_admin_bar(false);
 
