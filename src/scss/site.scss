@@ -5,19 +5,8 @@
 /* UI Basic components */
 @import './ui/*';
 
-/* ACF blocks */
-@import '../../blocks/**/style.scss';
-
 /* Plugins overwrites */
-@import 'plugin-overwrites/*';
-
-/* Templates */
-//@import './templates/*';
-
-/* Gutenberg Overwrites */
-//@import './gutenberg-overwrites/*';
+// @import 'plugin-overwrites/*';
 
 /* Components */
-@import './components/cards';
-//@import './blocks/image';
-//@import './components/main-menu';
+@import './components/swiper';
