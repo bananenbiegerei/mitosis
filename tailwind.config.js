@@ -2,29 +2,29 @@ module.exports = {
 	content: ['./**/*.php'],
 	theme: {
 		// Helper pixel to rem calc: https://nekocalc.com/de/px-zu-rem-umrechner
-		fontSize: {
-			xs: '0.625rem', // 10px
-			sm: '0.875rem', // 14px
-			base: '1rem', // 16px
-			lg: '1.25rem', // 20px
-			xl: '1.5rem', // 24px
-			'2xl': '2rem', // 32px
-			'3xl': '2.5rem', // 40px
-			'4xl': '3.75rem', // 60px
-			'5xl': '3.75rem', // 60px
-		},
-		fontFamily: {
-			sans: ['Arial', 'sans-serif'],
-			//mono: ['Roboto Mono', 'serif'],
-			//serif: ['Roboto Serif', 'serif'],
-		},
-		fontWeight: {
-			light: 200,
-			normal: 300,
-			medium: 400,
-			bold: 500,
-		},
 		extend: {
+			fontSize: {
+				xs: '0.625rem', // 10px
+				sm: '0.875rem', // 14px
+				base: '1rem', // 16px
+				lg: '1.25rem', // 20px
+				xl: '1.5rem', // 24px
+				'2xl': '2rem', // 32px
+				'3xl': '2.8125rem', // 45px (2.8125rem = 45px / 16)
+				'4xl': '3.75rem', // 60px
+				'5xl': '5rem', // 80px (5rem = 80px / 16)
+			},
+			fontFamily: {
+				sans: ['Arial', 'sans-serif'],
+				//mono: ['Roboto Mono', 'serif'],
+				//serif: ['Roboto Serif', 'serif'],
+			},
+			fontWeight: {
+				light: 200,
+				normal: 300,
+				medium: 400,
+				bold: 500,
+			},
 			height: {
 				'home-swiper': 'calc(100vh - 4rem)',
 			},
