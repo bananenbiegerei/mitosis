@@ -24,6 +24,11 @@ module.exports = {
 			medium: 400,
 			bold: 500,
 		},
+		extend: {
+			height: {
+				'home-swiper': 'calc(100vh - 4rem)',
+			},
+		},
 	},
 	corePlugins: {
 		aspectRatio: false,
@@ -75,9 +80,12 @@ module.exports = {
 							900: '#0b3aa4',
 						},
 						black: {
-							DEFAULT: 'black',
+							DEFAULT: '#212121',
 						},
-						red: {
+						white: {
+							DEFAULT: '#F7F7F7',
+						},
+						error: {
 							50: '#fff0f2',
 							100: '#ffe2e6',
 							200: '#ffc9d4',
@@ -90,7 +98,7 @@ module.exports = {
 							800: '#B0003E',
 							900: '#910a3d',
 						},
-						gray: {
+						neutral: {
 							50: '#f7f7f7',
 							100: '#DCDCDC',
 							200: '#c8c8c8',
@@ -103,7 +111,7 @@ module.exports = {
 							800: '#383838',
 							900: '#313131',
 						},
-						green: {
+						success: {
 							50: '#edfcf4',
 							100: '#d2f9e2',
 							200: '#a9f1cb',
@@ -115,7 +123,7 @@ module.exports = {
 							800: '#095c3f',
 							900: '#084c35',
 						},
-						neon: {
+						accent: {
 							50: '#fcffe5',
 							100: '#f5ffc8',
 							DEFAULT: '#ebff9a',
@@ -127,7 +135,7 @@ module.exports = {
 							800: '#4d670d',
 							900: '#415710',
 						},
-						orange: {
+						warning: {
 							50: '#fffaec',
 							100: '#fff3d3',
 							200: '#ffe4a5',
@@ -145,7 +153,7 @@ module.exports = {
 			},
 			themes: [
 				{
-					name: 'team-members-scheme',
+					name: 'primary',
 					extend: {
 						colors: {
 							palerose: {
@@ -176,7 +184,7 @@ module.exports = {
 					},
 				},
 				{
-					name: 'orga-scheme',
+					name: 'secondary',
 					extend: {
 						colors: {
 							red: {
@@ -191,32 +199,6 @@ module.exports = {
 							},
 							black: {
 								DEFAULT: '#000',
-							},
-						},
-					},
-				},
-				{
-					name: 'white-scheme',
-					extend: {
-						colors: {
-							primary: {
-								DEFAULT: '#fff',
-							},
-							black: {
-								DEFAULT: '#fff',
-							},
-						},
-					},
-				},
-				{
-					name: 'default-scheme',
-					extend: {
-						colors: {
-							primary: {
-								DEFAULT: '#000068',
-							},
-							black: {
-								DEFAULT: 'black',
 							},
 						},
 					},

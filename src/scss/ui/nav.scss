@@ -1,33 +1,16 @@
-//FIXME: need some cleanup here
-
-// Domains
-#navmenu_desktop_domains {
-	a {
-		&.current {
-			// Current domain or top-level page
-		}
+.menu {
+	&.horizontal {
+		@apply flex gap-2;
 	}
-}
-
-// Menu items in dropdown
-#navmenu_desktop_dropdown {
 	li {
-		&.current {
-			// Current page
+		a {
+			@apply text-gray-700;
+			&:hover {
+				@apply text-gray-900;
+			}
 		}
-		&.current {
-			@apply text-primary-500;
+		&.accent {
+			@apply bg-primary;
 		}
-	}
-}
-
-// Dropdown animations (could not get them to work with AlpineJS)
-#navmenu_desktop_dropdown {
-	& > div.invisible {
-		opacity: 0;
-	}
-	& > div.visible {
-		opacity: 1;
-		transition: opacity 0.2s;
 	}
 }
