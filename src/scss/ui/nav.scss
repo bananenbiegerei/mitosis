@@ -1,12 +1,12 @@
 .menu {
 	&.horizontal {
-		@apply flex gap-2;
+		@apply flex gap-4;
 	}
 	li {
 		a {
-			@apply text-gray-700;
+			@apply text-lg;
 			&:hover {
-				@apply text-gray-900;
+				@apply text-neutral-600;
 			}
 		}
 		&.accent {

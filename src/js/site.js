@@ -7,7 +7,7 @@ window.Alpine = Alpine;
 Alpine.start();
 
 
-const swiper = new Swiper('.home-top-swiper', {
+const homeTopSwiper = new Swiper('.home-top-swiper', {
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -17,4 +17,10 @@ const swiper = new Swiper('.home-top-swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+});
+
+const homeTextCardSwiper = new Swiper('.home-text-cards-swiper', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
 });

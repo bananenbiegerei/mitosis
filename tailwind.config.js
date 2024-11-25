@@ -79,6 +79,11 @@ const warningShades = {
 
 module.exports = {
 	content: ['./**/*.php'],
+	safelist: [
+		{
+		  pattern: /^(bg|text|border)-(primary|secondary|tertiary)-(50|100|200|300|400|500|600|700|800|900|DEFAULT)$/,
+		},
+	],
 	theme: {
 		// Helper pixel to rem calc: https://nekocalc.com/de/px-zu-rem-umrechner
 		extend: {
@@ -106,6 +111,9 @@ module.exports = {
 			},
 			height: {
 				'home-swiper': 'calc(100vh - 4rem)',
+			},
+			width: {
+				'home-text-cards-container': 'calc(100vw - 8rem)',
 			},
 		},
 	},

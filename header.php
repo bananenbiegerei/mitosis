@@ -3,13 +3,13 @@
 
 <?php get_template_part('head'); ?>
 
-<body <?php body_class('flex flex-col min-h-screen text-black'); ?>>
+<body <?php body_class('flex flex-col min-h-screen text-black bg-white'); ?>>
 <header
         x-data="{ lastScroll: 0, direction: 'up' }"
         x-init="$watch('lastScroll', (newValue, oldValue) => direction = newValue > oldValue ? 'down' : 'up')"
         @scroll.window="lastScroll = window.scrollY"
         :class="direction === 'down' ? '-translate-y-full' : 'translate-y-0'"
-        class="fixed top-0 left-0 w-full bg-white shadow transition-transform duration-300 z-50"
+        class="fixed top-0 left-0 w-full bg-white shadow transition-transform duration-300 z-50 py-6"
     >
     <nav class="container flex items-center">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="logo-link">
